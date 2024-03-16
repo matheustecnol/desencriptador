@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="assets/imagem_logo_alura_1x.png" alt="logo da alura">
+    </header>
+    <main class="visual">        
+        <div class="visual__texto-descriptografado">
+            <textarea class="visual__texto-descriptografado__textarea" id="textArea" cols="30" rows="10" placeholder="Digite seu texto."></textarea>
+            <div class="visual__texto-descriptografado__mensagem-botoes">
+                <p class="visual__texto-descriptografado__mensagem"><img src="assets/imagem_esclamacao.png" alt="icone esclamação"> Apenas letras minusculas e sem acento.</p>
+                <div class="visual__texto-descriptografado__botoes">
+                    <button class="visual__texto-descriptografado__botoes__botao-1" onclick="btnCriptografar()">Criptografar</button>
+                    <button class="visual__texto-descriptografado__botoes__botao-2" onclick="btnDescriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="visual__texto-criptografado">
+            <textarea class="visual__texto-criptografado__textarea" id="mensagem" cols="30" rows="10"></textarea>
+            <div class="visual__texto-criptografado__imagem-texto" id="div-texto-img">
+                <img src="assets/imagem-decodificacao-1.png" alt="Imagem pessoa pesquisando uma joia com lupa" id="img-lupa">
+                <p class="visual__texto-criptografado__imagem-texto__texto-destaque" id="aviso1">Nenhuma mensagem encontrada</p>
+                <p class="visual__texto-criptografado__imagem-texto__texto" id="aviso2">Digite um texto que voce deseja criptografar ou descriptografar.</p>
+            </div> 
+            <div class="visual__texto-criptografado__botoes" id="divbtn3">
+                <button  class="visual__texto-criptografado__botoes__botao-3" id="btn3" onclick="btnCopiar()">Copiar</button>
+            </div>      
+            
+            
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Matheus Moreno</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
